@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mutiat is a Passionate Frontend Web Developer from Nigeria.">
+    <title>BLESSING</title>
+    <!-- CSS STYLESHEET -->
+    <link rel="stylesheet" href="/src/style.css">
+   <!-- AOS ANIMATION -->
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- FAVICON -->
+    <!-- <link rel="icon" type="image/x-icon" href="/assets/images/mylogo.png"> -->
+    <!-- FONT AWESOME ICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- Link Swiper's CSS -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+/>
+
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav id="navbar">
+        <div class="logo"><h1>BLESSING</h1></div>
+    <ul class="nav-menu">
+        <li class="nav-link"><a href="index.html">Home</a> </li>
+        <li class="nav-link"><a href="about.html">About</a> </li>
+        <li class="nav-link"><a href="skills.html">Skills</a> </li>
+        <li class="nav-link"><a href="work.html">Projects</a> </li>
+        <li class="active"><a href="contact.html">Hire Me</a> </li>
+    </ul>
+    <div class="harmburger">
+        <i class="fa fa-bars"></i>
+    </div>
+</nav>
+<body>
+    
+ <!-- contacts -->
+ <div id="contact">
+  <div class="contact-title">
+      <h1>Contact Me</h1>
+  </div>
+  <div class="contact-card" data-aos="zoom-in">
+      <div class="card1">
+          <h3>Address</h3>
+          <i class="fa fa-home "></i> <br>
+          <p>Lagos, Nigeria.</p>
+      </div>
+      <div class="card1">
+          <h3>phone</h3>
+          <i class="fa fa-phone "></i> <br>
+          <a href="tel:08102567773">+2348102567773</a>
+
+      </div>
+      <div class="card1">
+          <h3>Gmail</h3>
+          <i class="fa fa-envelope"></i> <br>
+          <a href="mailto:blessingokomor@gmail.com">Gmail</a>
+      </div>
+  </div>
+  <form class="form" action="https://formsubmit.co/0bc4eedcd7b0bd97a5262722c21ba9c2" method="POST" 
+  data-aos="fade-down">
+      <p class="Namedanger" id="err"></p> 
+     <input type="text" name="Name" class="namy" placeholder="Name">
+     <p class="danger" id="err"></p>
+     <input type="email" class="emaily" name="Email" placeholder="Email">
+     <textarea name="Message" id="" cols="30" rows="10" placeholder="leave a message"></textarea> 
+     <button class="form-btn" type="submit">Submit</button>
+  </form>
+</div>
+<div class="footer">
+  <footer>
+      <h1> ELOHO BLESSING OKOMOR</h1>
+      <div class="foot-icon">
+          <a href="https://www.linkedin.com/in/blessing-okomor "> <i class="fa fa-linkedin"></i></a>
+          <a href="blessingokomor@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+         
+      </div>
+     <p> &copy; ELOHO BLESSING OKOMOR. All rights reserved </p>
+  </footer>
+
+</div>
+
+
+
+
+
+
+
+    <script src="/src/index.js"></script>
+<!-- AOS ANIMATION -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+  duration: 1000, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, 
+  });
+</script>
+<!-- lottie file -->
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+		<!-- Include the SwiperJS library -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Add the JavaScript code to initialize the swiper -->
+ <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+       <!-- Swiper JS -->
+       <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+       <script>
+  var swiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: '.swiper-prev',
+      prevEl: '.swiper-next',
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 5,
+      },
+    },
+  });
+</script>
+</body>
+<html
