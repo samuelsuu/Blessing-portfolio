@@ -80,6 +80,7 @@ ul {
 .container {
   display: grid;
   grid-template-rows: (4 1fr);
+  padding-top: 10px;
   color: white;
   background-color: #790569;
   max-width: 100%;
