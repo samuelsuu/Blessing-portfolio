@@ -796,10 +796,11 @@ button:hover {
 
   .form {
     width: 80%;
+    margin-top: 20px;
   }
 
   .form input {
-    width: 100%;
+    width: 90%;
   }
 }
 
