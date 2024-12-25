@@ -801,6 +801,10 @@ button:hover {
 }
 
 @media screen and (max-width: 480px) {
+  body {
+    width: 100% !important;
+    }
+    
   .intro-text h1 {
     font-size: 16px;
   }
@@ -814,7 +818,11 @@ button:hover {
     font-size: 16px;
     margin-top: 20px;
   }
-  
+  .hamburger {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+  }
   .content .card {
     background: #fff;
     max-width: 340px;
@@ -839,9 +847,23 @@ button:hover {
   .contact-card {
    
     width: 70%;
-    
   
    
+  }
+  nav {
+    display: none;
+   
+  }
+
+  .btn {
+    width: 150px;   /* Reduce width */
+    height: 50px;   /* Reduce height */
+    font-size: 14px; /* Smaller font size */
+  }
+  .btno {
+    margin-top: 10px;
+    height: 40px;  /* Smaller height */
+    width: 120px;  /* Smaller width */
   }
 }
 
