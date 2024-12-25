@@ -22,7 +22,7 @@ function myFunction() {
 // FOR THE BLINKING EFFECT
 // List of sentences
 var _CONTENT = [ 
-	"Technical Product Manager",
+	" a Technical Product Manager",
 ];
 
 // Current sentence being processed

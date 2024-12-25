@@ -245,7 +245,7 @@ ul {
 #contact,
 #projects {
   padding-top: 50px;
-  padding-bottom: 30px;
+ 
 }
 #about p,
 #skill p,
@@ -581,6 +581,7 @@ ul {
   border: 1px solid #f1f1f1;
   color: white;
 }
+
 .swiper-slide img {
   width: 100%;
   object-fit: contain;
@@ -603,7 +604,7 @@ ul {
 .resume .btn a {
   color: white; 
 }
-.swiper-next {
+/* .swiper-next {
   position: absolute;
   top: 47px !important;
   right: 50% !important;
@@ -615,8 +616,8 @@ ul {
   border-radius: 50% !important;
   outline: 0.5px solid #f1f1f1;
   color: #f1f1f1 !important;
-}
-.swiper-prev {
+} */
+/* .swiper-prev {
   position: absolute;
   top: 40px !important;
   left: 53% !important;
@@ -628,7 +629,14 @@ ul {
   border-radius: 50% !important;
   outline: 0.5px solid #f1f1f1;
   color: #f1f1f1 !important;
+} */
+
+.swiper-next,
+.swiper-prev {
+  display: none;
 }
+
+
 .pagy {
   position: relative;
 }
@@ -637,7 +645,7 @@ ul {
   text-align: center;
 }
 .resume {
-  margin-top: 60px; 
+  margin: 30px; 
   text-align: center;
 }
 .resume i{
@@ -886,6 +894,50 @@ button:hover {
     height: 40px;  /* Smaller height */
     width: 120px;  /* Smaller width */
   }
+
+  .pro-title:before{
+    content: "";
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    width: 290px;
+    height: 4px;
+    background: #fff;
+    transform: translateX(-50%);
+  }
+
+  .pro-title:after{
+    content: "";
+    position: absolute;
+    top: 115px;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #fff;
+    transform: translateX(-50%);
+  }
+  .swiper-wrapper{
+    justify-content:space-between;
+  }
+.page{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+  .swiper-next,
+  .swiper-prev {
+    display: block;
+    position: relative;
+   
+    padding: 10px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    background-color: #fff; 
+    cursor: pointer;
+  }
+ 
+  
 }
 
 
