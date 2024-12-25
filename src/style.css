@@ -955,7 +955,7 @@ button:hover {
   }
   
   .swiper-slide img {
-    width: 60%;
+    width: 90%;
     object-fit: contain;
     border-radius: 22px;
     transition: all 0.4s ease-in-out;
