@@ -710,6 +710,9 @@ button:hover {
   .intro {
     flex-direction: column;
     text-align: center;
+   
+      margin-top: 30px;
+   
   }
 
   .intro-img {
@@ -809,20 +812,14 @@ button:hover {
     font-size: 16px;
   }
 
-  #navbar li a {
-    font-size: 16px;
-  }
+  
 
   .btn {
     width: 100%;
     font-size: 16px;
     margin-top: 20px;
   }
-  .hamburger {
-    display: block;
-    font-size: 24px;
-    cursor: pointer;
-  }
+  
   .content .card {
     background: #fff;
     max-width: 340px;
@@ -834,6 +831,32 @@ button:hover {
     border-radius: 20px;
     box-shadow: 0 5px 5px rgba(1 1 1 / 15%);
   }
+  .nav-menu {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+}
+.intro{
+  margin-top: 30px;
+}
+.nav-menu.active {
+    display: flex;
+}
+
+.hamburger {
+    display: block;
+}
+.harmburger i {
+  font-size: 24px;
+  cursor: pointer;
+  color: #790569; 
+  transition: all 0.3s ease-in-out;
+}
+
+.harmburger:hover i {
+  color: #fff;
+}
 
   .about-pic {
     width: 100%;
@@ -850,10 +873,7 @@ button:hover {
   
    
   }
-  nav {
-    display: none;
-   
-  }
+  
 
   .btn {
     width: 150px;   /* Reduce width */

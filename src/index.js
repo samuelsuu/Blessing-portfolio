@@ -95,7 +95,7 @@ _INTERVAL_VAL = setInterval(Type, 100);
 
 // RESPONSIVE NAV MENU
 const Navy = document.querySelector('.nav-menu')
-const Ham = document.querySelector('.harmburger')
+const Ham = document.querySelector('.hamburger')
 const Linky = document.querySelectorAll('.nav-link')
 
 	Ham.addEventListener("click", ()=>{
