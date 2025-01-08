@@ -1058,7 +1058,7 @@ button:hover {
   .swiper-wrapper{
     justify-content:space-between;
     gap: 10px;
-    margin-left: 20px;
+    margin-left: 10px;
   }
 
 .page{
