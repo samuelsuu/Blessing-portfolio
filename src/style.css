@@ -934,7 +934,7 @@ button:hover {
   }
 
   .swiper-slide {
-    width: 100% !important; /* Make each slide take the full width */
+    width: 90% !important; /* Make each slide take the full width */
     margin-left: 0 !important; /* Remove unnecessary margin for alignment */
     padding: 20px; /* Add padding for spacing */
     box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 20px, rgba(0, 0, 0, 0.12) 0px 6px 6px;
