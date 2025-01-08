@@ -117,7 +117,7 @@ ul {
 }
 .intro-text h1 {
   font-size: 20px;
-  line-height: 100px;
+  line-height: 50px;
   font-family: "Playfair Display", serif;
 }
 
@@ -163,7 +163,7 @@ ul {
   line-height: 60px;
   text-align: center;
   border-radius: 45px 0 45px 0;
-  margin-top: 70px;
+  margin-top: 20px;
   transition: all ease 0.5s;
 }
 .btn a {
@@ -438,8 +438,9 @@ ul {
 .content .card {
   background: #fff;
   max-width: 340px;
+  width: 96%;
+  padding: 20px;
   margin: 15px;
-  padding: 25px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -576,6 +577,9 @@ ul {
 .swiper {
   background-color:#790569;
   padding: 40px 0 !important;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .swiper-wrapper{
@@ -598,7 +602,8 @@ ul {
 }
 
 .swiper-slide img {
-  width: 100%;
+  width: 300px; 
+  
   object-fit: contain;
   border-radius: 22px;
   transition: all 0.4s ease-in-out;
@@ -736,8 +741,7 @@ button:hover {
     flex-direction: column;
     text-align: center;
    
-      margin-top: 30px;
-   
+     
   }
 
   .intro-img {
@@ -853,7 +857,7 @@ button:hover {
 
   .content {
     flex-direction: column; /* Stacks the cards vertically */
-    margin-left: 60px; /* Reduce left margin */
+    margin-left: 20px; /* Reduce left margin */
   }
 
   .content .card {
@@ -875,7 +879,9 @@ button:hover {
   .service-title h1 {
     font-size: 1.5em; /* Adjust title size for smaller screens */
   }
-
+.section-body{
+  margin-bottom: 20px;
+}
   .service-text {
     width: 90%;
     text-align: justify;
@@ -884,18 +890,12 @@ button:hover {
     font-size: 16px;
    
   }
-  .contact-card {
-    justify-content: center;
-    align-items: center;
-    
-    width: 80%;
-    
-   
-  }
+ 
   .swiper-slide {
     min-height: 200px !important;
-    width: 200px !important;
+    width: 360px !important;
     display: flex;
+    margin-left: 10px;
   }
    
   .form {
@@ -915,7 +915,15 @@ button:hover {
   }
  
 
-  
+  .content {
+    margin-left: 0; /* Adjust margin for smaller screens */
+    margin-top: 20px;
+  }
+
+  .content .card {
+    max-width: 100%; /* Cards take full width of the container */
+    margin: 10px; /* Reduce margin for better spacing on smaller screens */
+  }
 
   
 
@@ -940,11 +948,16 @@ button:hover {
   .intro-text h1 {
     font-size: 16px;
   }
+  
 
-  .content {
-    flex-direction: column; /* Stacks the cards vertically */
-    margin-left: 10px; /* Reduce left margin */
+  .content .info h3 {
+    font-size: 1.2rem; /* Adjust heading size for better readability */
   }
+
+  .content .info p {
+    font-size: 0.9rem; /* Adjust paragraph size for smaller screens */
+  }
+ 
 
   .btn {
     width: 60%;
@@ -960,9 +973,7 @@ button:hover {
     flex-direction: column;
     text-align: center;
 }
-.intro{
-  margin-top: 30px;
-}
+
 .nav-menu.active {
     display: flex;
 }
@@ -990,14 +1001,19 @@ button:hover {
     width: 100%;
     padding: 10px;
   }
-
-  .contact-card {
-   
-    width: 90%;
-  
-   
+  .content {
+    flex-direction: column; /* Stacks the cards vertically */
+    margin-right: 60px;
   }
-
+  .content .card {
+    width: 100%; /* Cards take full width of the container */
+   padding: 40px;
+  }
+  .content .card .info {
+    text-align: center;
+    font-size: 15px;
+  }
+  
  
 .btno {
   margin-top: 10px;
@@ -1064,9 +1080,10 @@ button:hover {
   
   .swiper-slide {
     min-height: 200px !important;
-    width: 360px !important;
+    width: 346px !important;
     display: flex;
-    margin-left: 20px;
+    margin-right: 40px;   
+
   }
   .resume button {
     width: 100%;
