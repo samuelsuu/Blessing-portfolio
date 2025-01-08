@@ -893,9 +893,10 @@ button:hover {
  
   .swiper-slide {
     min-height: 200px !important;
-    width: 360px !important;
+    max-width: 340px !important;
     display: flex;
-    margin-left: 10px;
+    margin-left: 20px;
+    
   }
    
   .form {
@@ -1080,10 +1081,10 @@ button:hover {
   
   .swiper-slide {
     min-height: 200px !important;
-    width: 346px !important;
+    width: 340px !important;
     display: flex;
-    margin-right: 40px;   
-
+    margin-right: 20px;
+    
   }
   .resume button {
     width: 100%;
