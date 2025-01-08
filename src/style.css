@@ -891,13 +891,7 @@ button:hover {
    
   }
  
-  .swiper-slide {
-    min-height: 200px !important;
-    max-width: 340px !important;
-    display: flex;
-    margin-left: 20px;
-    
-  }
+ 
    
   .form {
     width: 80%;
@@ -933,7 +927,23 @@ button:hover {
     padding: 10px 15px;
     font-size: 14px;
   }
+  .swiper-wrapper{
+    justify-content:space-between;
+    gap: 10px;
+    margin-left: 20px;
+  }
 
+  .swiper-slide {
+    width: 100% !important; /* Make each slide take the full width */
+    margin-left: 0 !important; /* Remove unnecessary margin for alignment */
+    padding: 20px; /* Add padding for spacing */
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 20px, rgba(0, 0, 0, 0.12) 0px 6px 6px;
+  }
+
+  .swiper-slide img {
+    width: 100%; /* Let the image scale within the card */
+    height: auto; /* Maintain aspect ratio */
+  }
   .swiper-next, .swiper-prev {
     font-size: 25px;
   }
@@ -1047,6 +1057,8 @@ button:hover {
   }
   .swiper-wrapper{
     justify-content:space-between;
+    gap: 10px;
+    margin-left: 20px;
   }
 
 .page{
