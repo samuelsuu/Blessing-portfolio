@@ -19,6 +19,7 @@ button {
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px 30px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   overflow: hidden;
@@ -27,10 +28,14 @@ nav {
 }
 ul {
   display: flex;
-  width: 50%;
-  gap:10px;
+  width: 40%;
+  gap:2rem;
   justify-content: space-around;
  
+ 
+}
+.nav-menu{
+  margin-left: 10%;
 }
 
 #navbar .logo{
@@ -48,7 +53,7 @@ ul {
 
 #navbar li a {
   text-decoration: none;
-  font-size: 23px;
+  font-size: 16px;
   color: #790569;
   font-weight: 300;
  
@@ -101,18 +106,16 @@ ul {
 .intro {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap;
-
-
- 
+  margin-top: 5%;
 }
-.intro-img{
-  width: 277px;
+.intro-img {
+  /* width: 277px; */
   margin-top: 80px;
- 
   -webkit-mask-image: linear-gradient(to bottom, rgb(201, 122, 122), transparent);
   mask-image: linear-gradient(to bottom, #8b6d80, transparent);
-  
+  z-index: 100;
   
 }
 .intro-text h1 {
@@ -123,7 +126,7 @@ ul {
 
 #text {
   display: inline-block;
-  font-size: 33px;
+  font-size: 20px;
   text-align: justify;
   letter-spacing: 4px;
   font-weight: 700;
@@ -214,7 +217,7 @@ ul {
   text-decoration: none;
 }
 .icon i {
-  font-size: 34px;
+  font-size: 25px;
   color: white;
   padding: 3px 10px;
   transition: 0.5s;
@@ -233,9 +236,9 @@ ul {
   
 }
 .intro-img img {
-  width: 100%;
+  width: 70%;
   object-fit: cover;
-  height: 400px;
+  height: 500px;
   padding-left: 70px;
   
 
@@ -384,8 +387,10 @@ ul {
 .about-body {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 100%;
   flex-wrap: wrap;
+  margin: 30px 0;
 }
 .about-pic {
   height: 400px;
@@ -405,6 +410,8 @@ ul {
 .skill-body {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  margin: 30px 0;
   flex-wrap: wrap;
 }
 .skill-text {
@@ -576,7 +583,7 @@ ul {
 /* PROJECT  */
 .swiper {
   background-color:#790569;
-  padding: 40px 0 !important;
+  padding: 40px 10px !important;
   max-width: 100%;
   width: 100%;
   margin: 0 auto;
@@ -679,46 +686,84 @@ ul {
 /* FOOTER */
 footer {
   width: 100%;
-  padding-top: 60px;
-  margin-top: 20px;
-  padding-bottom: 60px;
+  padding: 40px 20px;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #4b0a3f;
   color: #fff;
-}
-.foot-icon i {
-  color: white;
-  font-size: 30px;
-  margin: 10px;
-}
-.foot-icon i:hover{
-  color:#790569;
-}
-/* LOAD MORE BUTTON */
-.loadMore {
-  display: none;
-}
-.loadMore p,
-.loadMore li {
-  line-height: 37px;
-}
-button:hover {
- 
-  color: white;
-}
-.read-show {
-  display: inline;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
 }
 
-/* FORM VALIDATION */
+footer h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.foot-icon {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.foot-icon i {
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.foot-icon i:hover {
+  color: #ff66b3;
+  transform: scale(1.2);
+}
+
+/* Load More Button */
+.loadMore {
+  display: none; /* Assuming this is for dynamic functionality */
+}
+
+.loadMore p,
+.loadMore li {
+  line-height: 1.6;
+}
+
+button:hover {
+  color: white;
+  background-color: #790569; /* Added for better interaction feedback */
+  border: none;
+  transition: all 0.3s ease;
+}
+
+/* Form Validation */
 #err {
   text-align: center;
   color: red;
   font-style: italic;
+  margin-top: 10px;
 }
+
+/* Responsive Design */
+/* @media (max-width: 768px) {
+  footer {
+    padding: 30px 10px;
+  }
+
+  .foot-icon {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  footer h1 {
+    font-size: 20px;
+  }
+} */
+
 /* MEDIA QUERIES */
 
 /* Media Queries for Responsive Design */
@@ -738,15 +783,18 @@ button:hover {
   }
 
   .intro {
+    margin-top: 10%;
     flex-direction: column;
     text-align: center;
+    justify-content: center;
    
      
   }
 
   .intro-img {
-    width: 80%;
+    width: 100%;
     margin: 20px 0;
+   
   }
 
   .intro-text h1 {
@@ -946,6 +994,35 @@ button:hover {
   }
   .swiper-next, .swiper-prev {
     font-size: 25px;
+  }
+   /* Footer */
+   footer {
+    padding: 20px 50px;
+    text-align: center;
+    
+  }
+
+  footer h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .foot-icon {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .foot-icon i {
+    font-size: 20px;
+    color: #fff;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .foot-icon i:hover {
+    color: #ff66b3;
+    transform: scale(1.2);
   }
 }
   
