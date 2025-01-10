@@ -16,39 +16,34 @@ button {
 #navbar {
   width: 100%;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 30px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  overflow: hidden;
   background-color: white;
   z-index: 1000;
 }
-ul {
-  display: flex;
-  width: 40%;
-  gap:2rem;
-  justify-content: space-around;
- 
- 
-}
-.nav-menu{
-  margin-left: 10%;
+
+.nav-menu {
+  display: flex; /* Default display for desktop */
+  flex-direction: row; /* Horizontal layout for desktop */
+  gap: 2rem;
+  position: static; /* Position relative to normal flow for desktop */
+  width: auto; /* Let it take only the space it needs for desktop */
+  background-color: transparent; /* No background for desktop */
+  padding: 0; /* No padding for desktop */
+  box-shadow: none; /* No shadow for desktop */
 }
 
-#navbar .logo{
-  color:#790569;
+#navbar .logo {
+  color: #790569;
 }
+
 #navbar li {
   list-style: none;
-  
-}
-.hamburger {
-  display: none;
-  font-size: 24px;
-  cursor: pointer;
 }
 
 #navbar li a {
@@ -56,12 +51,10 @@ ul {
   font-size: 16px;
   color: #790569;
   font-weight: 300;
- 
 }
+
 #navbar li a:hover,
 #navbar li a:active {
-  /* text-decoration: underline;
-    text-decoration-color: blue; */
   content: "";
   height: 2px;
   width: 100%;
@@ -69,13 +62,16 @@ ul {
   transition: 0.3s;
   font-weight: 500;
 }
-.harmburger {
+
+/* Hamburger Menu Styles */
+.hamburger {
   display: none;
+  font-size: 24px;
   cursor: pointer;
 }
-.harmburger i {
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.9s ease-in-out;
+
+.hamburger i {
+  transition: all 0.3s ease-in-out;
   color: #790569;
 }
 
@@ -769,19 +765,64 @@ button:hover {
 /* Media Queries for Responsive Design */
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-  #navbar {
-    padding: 10px;
-  }
-
-  #navbar ul {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    justify-content: space-evenly;
+    padding: 20px 20px;
+    background-color: white;
+    position: relative; /* Allows absolute positioning of the menu */
+    z-index: 1000;
+  }
+  
+  .logo {
+    flex: 0; /* Prevents the logo from stretching */
+    text-align: left;
+  }
+  
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    color: #790569;
+  }
+  
+  .nav-menu {
+    display: none; /* Hide menu initially on mobile */
+    flex-direction: column; /* Stack links vertically */
+    gap: 1rem;
+    position: absolute; /* Position it absolutely for mobile */
+    top: 100%;
+    left: 0;
+    width: 100vw; /* Use full width of the viewport */
+    max-width: 100%; /* Prevent overflow */
+    background-color: white; /* Background for dropdown */
+    padding: 10px 20px; /* Add padding */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; /* Add shadow */
   }
 
+  
+  .nav-menu.active {
+    display: flex;
+  }
+  
+  #navbar li {
+    list-style: none;
+  }
+  
   #navbar li a {
+    text-decoration: none;
     font-size: 18px;
+    padding: 5px 10px;
+    color: #790569;
   }
-
+  
+  .hamburger.active i {
+    transform: rotate(90deg);
+    transition: 0.3s;
+  }
+  
   .intro {
     margin-top: 10%;
     flex-direction: column;
@@ -1180,8 +1221,4 @@ button:hover {
     font-size: 18px;
     margin-top: 30px;
   }
-}
-
-
-
 
