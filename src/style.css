@@ -6,6 +6,12 @@
   font-family: "Poppins", sans-serif;
   /* width: 100%; */
 }
+:root{
+  --primary-color: #007BFF;
+  --secondary-color: #6C757D;
+  --text-color: #212529;
+  --background-color: #F8F9FA;
+}
 body {
 width: 100% !important;
 }
@@ -39,7 +45,7 @@ nav {
 }
 
 #navbar .logo {
-  color: #790569;
+  color: var(--text-color);
 }
 
 #navbar li {
@@ -49,7 +55,7 @@ nav {
 #navbar li a {
   text-decoration: none;
   font-size: 16px;
-  color: #790569;
+  color: var(--text-color);
   font-weight: 300;
 }
 
@@ -58,7 +64,7 @@ nav {
   content: "";
   height: 2px;
   width: 100%;
-  border-bottom: 4px solid #790569;
+  border-bottom: 4px solid var(--text-color);
   transition: 0.3s;
   font-weight: 500;
 }
@@ -72,7 +78,7 @@ nav {
 
 .hamburger i {
   transition: all 0.3s ease-in-out;
-  color: #790569;
+  color: var(--text-color);
 }
 
 /* STICKY */
@@ -88,7 +94,7 @@ nav {
   grid-template-rows: (4 1fr);
   padding-top: 10px;
   color: white;
-  background-color: #790569;
+  background-color: var(--secondary-color);
   max-width: 100%;
   
 }
@@ -144,7 +150,7 @@ nav {
     background-color: transparent;
   }
   50% {
-    background-color: #790569;
+    background-color: var(--primary-color);
   }
 }
 
@@ -153,7 +159,7 @@ nav {
   position: relative;
   text-decoration: none;
   outline: 0.5px solid #f1f1f1;
-  background-color:#790569;
+  background-color:var(--primary-color);
   color:#f1f1f1;
   font-size: 16px;
   font-weight: 200;
@@ -824,7 +830,7 @@ button:hover {
   }
   
   .intro {
-    margin-top: 10%;
+    margin-top: 20%;
     flex-direction: column;
     text-align: center;
     justify-content: center;
@@ -1221,4 +1227,4 @@ button:hover {
     font-size: 18px;
     margin-top: 30px;
   }
-
+}
