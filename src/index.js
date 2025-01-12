@@ -180,3 +180,23 @@ const regex =  /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
   }
   
     })
+
+
+
+
+	document.querySelectorAll('.nav-menu a').forEach(link => {
+		link.addEventListener('click', function(e) {
+		  e.preventDefault(); // Prevent default anchor click behavior
+	  
+		  // Scroll to the section smoothly
+		  const targetId = this.getAttribute('href');
+		  const targetSection = document.querySelector(targetId);
+		  if (targetSection) {
+			window.scrollTo({
+			  top: targetSection.offsetTop,
+			  behavior: 'smooth',
+			});
+		  }
+		});
+	  });
+	  
