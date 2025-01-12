@@ -24,22 +24,27 @@
 <body>
     <!-- NAVIGATION BAR -->
     <nav id="navbar">
-        <div class="logo"><h1>BLESSING</h1></div>
-    <ul class="nav-menu">
-        <li class="active"><a href="index.html">Home</a> </li>
-        <li class="nav-link"><a href="about.html">About</a> </li>
-        <li class="nav-link"><a href="skills.html">Skills</a> </li>
-        <li class="nav-link"><a href="work.html">Projects</a> </li>
-        <li class="nav-link"><a href="contact.html">Hire Me</a> </li>
-    </ul>
-    <div class="hamburger">
-        <i class="fa fa-bars"></i>
-    </div>
+      <div class="logo">
+          <h1>BLESSING</h1>
+      </div>
+      <ul class="nav-menu">
+          <li class="nav-link active"><a href="#home">Home</a></li>
+          <li class="nav-link"><a href="#about">About</a></li>
+          <li class="nav-link"><a href="#skill">Skills</a></li>
+          <li class="nav-link"><a href="#service">Service</a></li>
+          <li class="nav-link"><a href="#projects">Projects</a></li>
+          <li class="nav-link"><a href="#contact">Hire Me</a></li>
+      </ul>
+      <div class="hamburger">
+          <i class="fa fa-bars"></i>
+      </div>
+  </nav>
+  
     
 </nav>
 
 
-<div class="container">
+<div class="container" id="home">
    <!-- INTRO SECTION -->
    <div class="intro">
     <div class="intro-text">
@@ -56,7 +61,7 @@
     </div>
     </div>
     <div class="intro-img">
-        <img src="assets/images/blessing.png" alt="profile picture">
+        <img src="assets/images/bless.png"  alt="profile picture">
     </div>
 </div>
     <!-- SECTION ABOUT -->
@@ -81,7 +86,7 @@
                    and solve real problems. My professional journey reflects a passion for leadership, execution, and cross-functional collaboration 
                    in dynamic, growth-oriented environments.</p>
             </div>
-            <button class="btn Load">Read More.....</button>
+            <!-- <button class="btn Load">Read More.....</button> -->
         </div>
         
     </div>
@@ -107,7 +112,7 @@
                     <p class="loadMore">
                         My passion lies in customer-centric development, focusing on addressing user pain points through empathy mapping, research, and prototyping. With a strong foundation in project management, sprint planning, and stakeholder communication, I thrive in managing end-to-end lifecycles to deliver meaningful products. My familiarity with cloud platforms like AWS and Azure supports modern infrastructure needs for scalability and security.
                     </p>
-                    <button class="btn Load"> Read More...</button>
+                    <!-- <button class="btn Load"> Read More...</button> -->
                 </div>
                 <div class="skill-pic" data-aos="fade-right">
                     <img src="/assets/images/undraw_online_test_re_kyfx.svg" alt="Product Management Image">
@@ -184,26 +189,35 @@
     </div>
  <!-- projects -->
  
- <div class="swiper mySwiper">
+ <div class="swiper mySwiper" id="projects">
   <h1 class="pro-title">Projects</h1>
   <div class="swiper-wrapper">
     <!-- TaskSync Project -->
     <div class="swiper-slide">
       <img src="assets/images/tassk.png" alt="TaskSync">
       <p><strong>TaskSync: Task <br> Management <br> Platform</strong></p>
+      <button class="btno"><a href="https://www." target="_blank">My Role</a></button>
       <button class="btno"><a href="https://tasksync-cyan.vercel.app/" target="_blank">View Details</a></button>
     </div>
     <!-- Renergy Hub Project -->
     <div class="swiper-slide">
       <img src="assets/images/energy.png" alt="Renergy Hub">
       <p><strong>Renergy Hub: Renewable <br> Energy <br> Marketplace</strong></p>
-      <button class="btno"><a href="https://www.renergyhub.com.ng/" target="_blank">View Details</a></button>
+      <div class="sam">
+        <button class="btno"><a href="https://www." target="_blank">My Role</a></button>
+        <button class="btno"><a href="https://www.renergyhub.com.ng/" target="_blank">View Details</a></button>
+      </div>
+    
     </div>
     <!-- SmartPay Project -->
     <div class="swiper-slide">
       <img src="assets/images/legall.png" alt="Renergy Hub">
       <p><strong>Legal Connect: B2B SaaS Mobile App for Legal Services</strong></p>
-      <button class="btno"><a href="https://medium.com/@blessingokomor/product-management-case-study-legalconnect-bridging-the-gap-between-lawyers-and-clients-in-need-edc188d6da18" target="_blank">View Details</a></button>
+      <div class="sam">
+        <button class="btno"><a href="https://www." target="_blank">My Role</a></button>
+        <button class="btno"><a href="https://medium.com/@blessingokomor/product-management-case-study-legalconnect-bridging-the-gap-between-lawyers-and-clients-in-need-edc188d6da18" target="_blank">View Details</a></button>
+      </div>
+      
     </div>
   </div>
   <!-- Swiper Navigation -->
@@ -225,6 +239,7 @@
     <div class="swiper-slide">
       <img src="assets/images/data.jpg" alt="DataWise">
       <p><strong>DataWise: Consumer Data Insights</strong></p>
+      <button class="btno"><a href="https://www." target="_blank">My Role</a></button>
       <button class="btno"><a href="https://drive.google.com/file/d/1tsAydXlxcyCqKAzC9zO5u8XVoMALGn3J/view" target="_blank">View Details</a></button>
     </div>
     
@@ -232,12 +247,14 @@
     <div class="swiper-slide">
       <img src="assets/images/finpal.jpg" alt="MediSense">
       <p><strong>FINPAL: Personal and Group Financial Management Platform</strong></p>
+      <button class="btno"><a href="https://www." target="_blank">My Role</a></button>
       <button class="btno"><a href="https://shorturl.at/KqiLg" target="_blank">View Details</a></button>
     </div>
     <!-- ChoreEase Project -->
     <div class="swiper-slide">
       <img src="assets/images/skills.jpg" alt="ChoreEase">
       <p><strong>SkillConnect: EDTech <br> Mobile <br> Application</strong></p>
+      <button class="btno"><a href="https://www." target="_blank">My Role</a></button>
       <button class="btno"><a href="https://shorturl.at/rheYU" target="_blank">View Details</a></button>
     </div>
   </div>
@@ -304,7 +321,11 @@
         </div>
        <p> &copy; ELOHO BLESSING OKOMOR. All rights reserved </p>
     </footer>
-  
+
+    <a href="https://wa.me/+2348102567773" target="_blank" class="whatsapp-float">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+    </a>
+    
   </div>
 <script src="/src/index.js"></script>
 <!-- AOS ANIMATION -->
