@@ -7,8 +7,8 @@
   /* width: 100%; */
 }
 :root{
-  --primary-color: #007BFF;
-  --secondary-color: #6C757D;
+  --primary-color: #0157B3;
+  --secondary-color: #000B18;
   --text-color: #212529;
   --background-color: #F8F9FA;
 }
@@ -116,11 +116,12 @@ nav {
 .intro-img {
   /* width: 277px; */
   margin-top: 80px;
-  -webkit-mask-image: linear-gradient(to bottom, rgb(201, 122, 122), transparent);
-  mask-image: linear-gradient(to bottom, #8b6d80, transparent);
+  -webkit-mask-image: linear-gradient(to bottom, rgb(83, 61, 61), transparent);
+  mask-image: linear-gradient(to bottom, #131112, transparent);
   z-index: 100;
   
 }
+
 .intro-text h1 {
   font-size: 25px;
   line-height: 50px;
@@ -168,7 +169,8 @@ nav {
   height: 60px;
   line-height: 60px;
   text-align: center;
-  border-radius: 45px 0 45px 0;
+  border-radius: 20px;
+  box-shadow: 2px 4px var(--secondary-color);
   margin-top: 20px;
   transition: all ease 0.5s;
 }
@@ -201,23 +203,41 @@ nav {
   width: 140px;
   border-radius: 15px;
   transition: all 0.4s ease-in-out;
+  
 }
 
 .btno:hover {
   filter: grayscale(0);
-  transform: scale(1.15);
-  
+  transform: scale(1.15); 
+  background-color: var(--primary-color);
+  color: var(--background-color);
 }
 .btno a {
   text-decoration: none;
   color: var(--text-color);
   font-size: 18px;
+ 
 }
 .icon {
   padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+}
+.icon a:hover {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  transition: 0.5s;
 }
 .icon a {
   text-decoration: none;
+  background-color: var(--background-color);
+  padding: 10px;
+  margin: 20px 0px;
+  color: var(--text-color);
+  border-radius: 20px;
+ 
 }
 .icon i {
   font-size: 25px;
@@ -240,7 +260,7 @@ nav {
 }
 .intro-img img {
   object-fit: cover;
-  height: 500px;
+  height: 400px;
 
 }
 
@@ -838,10 +858,10 @@ button:hover {
   
   .intro {
     margin-top: 20%;
-    flex-direction: column;
+    flex-direction: column-reverse;
     text-align: center;
     justify-content: center;
-   
+   padding-bottom: 20px;
      
   }
 
@@ -871,7 +891,7 @@ button:hover {
     margin: 0; /* Removed extra margin */
   }
   .about-body {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
   }
 
@@ -902,6 +922,10 @@ button:hover {
 
   .btn.Load {
     font-size: 1rem; /* Adjust button size for mobile */
+  }
+  .icon {
+    display: flex;
+    justify-content: center;
   }
  
 
