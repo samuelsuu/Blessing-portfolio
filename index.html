@@ -44,26 +44,59 @@
 </nav>
 
 
-<div class="container" id="home">
-   <!-- INTRO SECTION -->
-   <div class="intro">
-    <div class="intro-text">
-    <h1>Meet,</h1>
-    <h1><span style="color: #fff;">ELOHO BLESSING OKOMOR</span></h1>
-    <div id="type">
-        <div id="text"></div><div id="cursor"></div>
-    </div>
-    <!-- <button class="btn" > <a href="see more">See more</a></button> -->
-    <div class="icon">
-        <a href="assets/images/TECHNICAL PRODUCT MANAGER - ELOHO BLESSING OKOMOR-.pdf" download="resume">My Resume</a>
-        <a href="#contact" target="_blank">Contact me</a>  
-
-    </div>
-    </div>
-    <div class="intro-img">
-        <img src="assets/images/bles.jpeg"  alt="profile picture">
-    </div>
+<div class="container" id="home" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 6% 0;">
+  <!-- INTRO SECTION -->
+  <div class="intro" style="width: 100%; max-width: 1200px; display: flex; flex-direction: column; align-items: center;">
+      <!-- Profile Picture -->
+      <div class="intro-img" style="margin-bottom: 20px;">
+          <img src="assets/images/image.png" alt="profile picture" style="width: 100%; border-radius: 50%; max-width: 200px;">
+      </div>
+      <!-- Intro Text -->
+      <div class="intro-text">
+          <h1 style="margin: 10px 0;">Meet,</h1>
+          <h1 style="margin: 10px 0; color: #fff;">ELOHO BLESSING OKOMOR</h1>
+          <div id="type" style="margin: 10px 0;">
+              <div id="text"></div>
+              <div id="cursor"></div>
+          </div>
+          <!-- Links Section -->
+          <div class="icon" style="display: flex; justify-content: center; gap: 20px; margin-top: 20px;">
+              <a href="assets/images/TECHNICAL PRODUCT MANAGER - ELOHO BLESSING OKOMOR-.pdf" download="resume" style="text-decoration: none; color: black; border: 2px solid #fff; padding: 10px 20px; border-radius: 5px;">My Resume</a>
+              <a href="#contact" target="_blank" style="text-decoration: none; color: black; border: 2px solid #fff; padding: 10px 20px; border-radius: 5px;">Contact me</a>
+          </div>
+      </div>
+  </div>
 </div>
+
+<style>
+@media (min-width: 768px) {
+   .container {
+       flex-direction: row;
+       justify-content: center;
+       text-align: left;
+       margin: 0 15%;
+   }
+   .intro {
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       gap: 40px;
+   }
+   .intro-img {
+       flex: 1;
+       max-width: 300px;
+       margin-bottom: 0;
+   }
+   .intro-text {
+       flex: 2;
+   }
+   .icon {
+       justify-content: flex-start;
+   }
+}
+</style>
+
+
     <!-- SECTION ABOUT -->
     <div id="about">
         <div class="about-title">
@@ -75,9 +108,8 @@
         </div>
         <div class="about-text read" data-aos="zoom-in">
             <!-- <h2>Hey There! I'm Blessing</h2> -->
-            <p>As a Technical Product Manager, I’m passionate about bridging the gap between business, technology, and user experience. 
-               With a background in accounting and entrepreneurial experience, I bring a unique blend of analytical skills, financial insight, 
-               and the ability to build innovative products that solve real-world problems.</p>
+            <p>Passionate about bridging the gap between business, technology, and user experience. With a background in accounting and entrepreneurial experience, I bring a unique blend of analytical skills, 
+              financial insight, and the ability to build innovative products that solve real-world problems.</p>
             <div class="loadMore">
                 <p>I excel at aligning engineering, design, and business teams to create impactful products. My expertise in frameworks like MoSCoW 
                    and RICE enables me to prioritize effectively and deliver solutions that meet user and business needs. 
@@ -239,7 +271,7 @@
     <div class="swiper-slide">
       <img src="assets/images/data.jpg" alt="DataWise">
       <p><strong>DataWise: Consumer Data Insights</strong></p>
-      <button class="btno"><a href="https://shorturl.at/ORLw6" target="_blank">My Role</a></button>
+      <button class="btno"><a href="" target="_blank">My Role</a></button>
       <button class="btno"><a href="https://drive.google.com/file/d/1tsAydXlxcyCqKAzC9zO5u8XVoMALGn3J/view" target="_blank">View Details</a></button>
     </div>
     
@@ -247,15 +279,21 @@
     <div class="swiper-slide">
       <img src="assets/images/finpal.jpg" alt="MediSense">
       <p><strong>FINPAL: Personal and Group Financial Management Platform</strong></p>
-      <button class="btno"><a href="https://shorturl.at/ORLw6" target="_blank">My Role</a></button>
+      <button class="btno"><a href="" target="_blank">My Role</a></button>
       <button class="btno"><a href="https://shorturl.at/KqiLg" target="_blank">View Details</a></button>
     </div>
     <!-- ChoreEase Project -->
     <div class="swiper-slide">
       <img src="assets/images/skills.jpg" alt="ChoreEase">
       <p><strong>SkillConnect: EDTech <br> Mobile <br> Application</strong></p>
-      <button class="btno"><a href="https://shorturl.at/ORLw6" target="_blank">My Role</a></button>
+      <button class="btno"><a href="" target="_blank">My Role</a></button>
       <button class="btno"><a href="https://shorturl.at/rheYU" target="_blank">View Details</a></button>
+    </div>
+    <div class="swiper-slide">
+      <img src="assets/images/sk.jpeg" alt="ChoreEase">
+      <p><strong>AFRICRAFT - EDTech <br>  Market Place for African Artisans</strong></p>
+      <button class="btno"><a href="" target="_blank">My Role</a></button>
+      <button class="btno"><a href="https://shorturl.at/ORLw6" target="_blank">View Details</a></button>
     </div>
   </div>
   <!-- Swiper Navigation -->
